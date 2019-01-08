@@ -1,0 +1,5 @@
+options:
+  config-file: .sass-lint-rules.yml
+
+files:
+  include: 'app/components/**/*.scss'

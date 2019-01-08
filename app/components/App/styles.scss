@@ -1,0 +1,22 @@
+.Root {
+  display: block;
+  padding: 20px;
+}
+
+.Heading {
+  @include font(200);
+  display: block;
+  font-size: 50px;
+  margin: 0 0 20px;
+}
+
+.Columns {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.Column {
+  flex: 1 0 0;
+}

@@ -1,0 +1,61 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:electron": "cross-env NODE_ENV=development electron ./index.js",
+    "dev:webpack": "cross-env NODE_ENV=development webpack-dev-server --config webpack/webpack.config.dev.js",
+    "dev": "concurrently \"npm run dev:webpack\" \"npm run dev:electron\"",
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potterbm/sql-ide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/potterbm/sql-ide/issues"
+  },
+  "homepage": "https://github.com/potterbm/sql-ide#readme",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-jsx-control-statements": "^4.0.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.21",
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.0",
+    "electron": "^4.0.0",
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-jsx-control-statements": "^2.2.1",
+    "eslint-plugin-react": "^7.12.0",
+    "react-hot-loader": "^4.6.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "immutable": "^4.0.0-rc.12",
+    "node-sass": "^4.11.0",
+    "react": "^16.7.0",
+    "react-codemirror": "^1.0.0",
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-immutable": "^4.0.0",
+    "redux-promise-middleware": "^5.1.1",
+    "redux-thunk": "^2.3.0",
+    "sass-resources-loader": "^2.0.0"
+  }
+}

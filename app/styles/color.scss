@@ -1,0 +1,18 @@
+$colors: (
+  Black:           #000000,
+  DeepCarmine:     #A5243D,
+  EnglishLavender: #B48291,
+  Gainsboro:       #CEE0DC,
+  PastelBlue:      #B9CFD4,
+  SilverChalice:   #AFAAB9,
+  White:           #ffffff,
+  WhiteSmoke:      #f8f8f8,
+);
+
+@function color($name, $rgba: false) {
+  @if $rgba == false {
+    @return map-get($colors, $name);
+  } @else {
+    @return rgba(map-get($colors, $name), $rgba);
+  }
+}

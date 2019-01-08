@@ -1,0 +1,3 @@
+export const GET_RESULTS           = 'GET_RESULTS';
+export const GET_RESULTS_PENDING   = `${GET_RESULTS}_PENDING`;
+export const GET_RESULTS_FULFILLED = `${GET_RESULTS}_FULFILLED`;

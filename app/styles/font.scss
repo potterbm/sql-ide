@@ -1,0 +1,8 @@
+@mixin font($weight: 400) {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: $weight;
+
+  @if ($weight == 700) {
+    letter-spacing: 0.025em;
+  }
+}
