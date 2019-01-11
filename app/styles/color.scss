@@ -1,12 +1,16 @@
 $colors: (
   Black:           #000000,
+  CambridgeBlue:   #9BC1BC,
+  CaribbeanGreen:  #06D6A0,
+  Platinum:        #E6EBE0,
+  White:           #FFFFFF,
+
+  // These colors are intended for syntax highlighting if I ever get around to that
   DeepCarmine:     #A5243D,
   EnglishLavender: #B48291,
   Gainsboro:       #CEE0DC,
   PastelBlue:      #B9CFD4,
   SilverChalice:   #AFAAB9,
-  White:           #ffffff,
-  WhiteSmoke:      #f8f8f8,
 );
 
 @function color($name, $rgba: false) {

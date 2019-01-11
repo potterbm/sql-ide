@@ -1,0 +1,25 @@
+.Root {
+  align-items: center;
+  background: color(Platinum);
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  transition: opacity 0.5s ease;
+  width: 100%;
+
+  &.isVisible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.Form {
+  display: block;
+  flex: 0 0 auto;
+  height: auto;
+  width: auto;
+}

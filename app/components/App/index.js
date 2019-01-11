@@ -1,3 +1,4 @@
+import DatabasePicker           from 'components/DatabasePicker';
 import Editor                   from 'components/Editor';
 import React, { PureComponent } from 'react';
 import Results                  from 'components/Results';
@@ -9,7 +10,13 @@ export default class App extends PureComponent {
   render() {
     return (
       <div className={ styles.Root }>
-        <h1 className={ styles.Heading }>Write Some SQL</h1>
+        <div className={ styles.Inline }>
+          <h1 className={ styles.Heading }>Write Some SQL</h1>
+
+          <div className={ styles.Column }>
+            <DatabasePicker />
+          </div>
+        </div>
 
         <div className={ styles.Columns }>
           <div className={ styles.Column }>

@@ -18,6 +18,7 @@ function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     backgroundColor: '#f8f8f8',
+    frame: false,
     height: screenSize.height * 0.85,
     icon: path.resolve(__dirname, 'assets/icons/icon.icns'),
     minHeight: 800,

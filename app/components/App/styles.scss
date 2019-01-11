@@ -3,10 +3,18 @@
   padding: 20px;
 }
 
+.Inline {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
 .Heading {
-  @include font(200);
+  @include font(900);
   display: block;
-  font-size: 50px;
+  flex: 0 0 auto;
+  font-size: 40px;
   margin: 0 0 20px;
 }
 
